@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ChatterBox/.vs
+/ChatterBox/ChatterBox/.vs/ChatterBox.slnx
+/ChatterBox/ChatterBox/ChatterBox.Application/obj
+/ChatterBox/ChatterBox/ChatterBox.Domain/obj
+/ChatterBox/ChatterBox/ChatterBox.Infrastructure/obj
+/ChatterBox/ChatterBox/ChatterBox.Shared/obj
+/ChatterBox/ChatterBox/ChatterBox.Web/obj
+/SignalRChatApp/.vs
+/SignalRChatApp/bin/Debug/net10.0
