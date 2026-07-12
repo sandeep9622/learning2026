@@ -11,5 +11,6 @@
 /ChatterBox/ChatterBox/ChatterBox.Web/obj
 /SignalRChatApp/.vs
 /SignalRChatApp/bin/Debug/net10.0
+/SignalRChatApp/obj
 /ChatterBox/ChatterBox/ChatterBox.IntigrationTests/obj
 /ChatterBox/ChatterBox/ChatterBox.UnitTests/obj
