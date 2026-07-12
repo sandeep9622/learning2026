@@ -1,9 +1,13 @@
 <Solution>
   <Folder Name="/src/">
-    <Project Path="ChatterBox.Application/ChatterBox.Application.csproj" />
-    <Project Path="ChatterBox.Domain/ChatterBox.Domain.csproj" />
-    <Project Path="ChatterBox.Infrastructure/ChatterBox.Infrastructure.csproj" />
-    <Project Path="ChatterBox.Shared/ChatterBox.Shared.csproj" />
-    <Project Path="ChatterBox.Web/ChatterBox.Web.csproj" />
+    <Project Path="D:/GIT/learning2026/ChatterBox/ChatterBox/ChatterBox.Application/ChatterBox.Application.csproj" />
+    <Project Path="D:/GIT/learning2026/ChatterBox/ChatterBox/ChatterBox.Domain/ChatterBox.Domain.csproj" />
+    <Project Path="D:/GIT/learning2026/ChatterBox/ChatterBox/ChatterBox.Infrastructure/ChatterBox.Infrastructure.csproj" />
+    <Project Path="D:/GIT/learning2026/ChatterBox/ChatterBox/ChatterBox.Shared/ChatterBox.Shared.csproj" />
+    <Project Path="D:/GIT/learning2026/ChatterBox/ChatterBox/ChatterBox.Web/ChatterBox.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="D:/GIT/learning2026/ChatterBox/ChatterBox/ChatterBox.IntigrationTests/ChatterBox.IntigrationTests.csproj" />
+    <Project Path="D:/GIT/learning2026/ChatterBox/ChatterBox/ChatterBox.UnitTests/ChatterBox.UnitTests.csproj" />
   </Folder>
 </Solution>
