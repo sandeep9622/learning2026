@@ -1,4 +1,18 @@
+using ChatterBox.Web.Data;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("ChatterBoxWebContext") ?? throw new InvalidOperationException("Connection string 'ChatterBoxWebContext' not found.");
+
+builder.Services.AddDbContext<ChatterBoxWebContext>(options => options.UseSqlServer(connectionString));
+
+builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
+{
+    options.Password.RequireDigit = true;
+    options.Password.RequiredLength = 8;
+    options.SignIn.RequireConfirmedAccount = true;
+}).AddEntityFrameworkStores<ChatterBoxWebContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -15,6 +29,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
+app.UseAuthentication();
 
 app.UseAuthorization();
 
@@ -24,6 +39,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
+app.MapRazorPages();
 
 
 app.Run();

@@ -14,3 +14,13 @@
 /SignalRChatApp/obj
 /ChatterBox/ChatterBox/ChatterBox.IntigrationTests/obj
 /ChatterBox/ChatterBox/ChatterBox.UnitTests/obj
+/ChatterBox/ChatterBox/ChatterBox.Web/appsettings.json
+/.vs/CopilotSnapshots/9AFBF9C61710E14BAD16D685827E7F72
+/ChatterBox/ChatterBox/.vs
+/ChatterBox/ChatterBox/ChatterBox.Application/bin/Debug/net10.0
+/ChatterBox/ChatterBox/ChatterBox.Domain/bin/Debug/net10.0
+/ChatterBox/ChatterBox/ChatterBox.Infrastructure/bin/Debug/net10.0
+/ChatterBox/ChatterBox/ChatterBox.IntigrationTests/bin/Debug/net10.0
+/ChatterBox/ChatterBox/ChatterBox.UnitTests/bin/Debug/net10.0
+/ChatterBox/ChatterBox/ChatterBox.Shared/bin/Debug/net10.0
+/ChatterBox/ChatterBox/ChatterBox.Web/bin/Debug/net10.0

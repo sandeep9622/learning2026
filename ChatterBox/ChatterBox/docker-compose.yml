@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  chatterbox.web:
+    build:
+      context: .
+      dockerfile: ChatterBox.Web/Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - sql
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=sql,1433;Database=ChatterBox;User Id=sa;Password=Deep@123;TrustServerCertificate=True;
+
+  sql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Deep@123
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqldata:/var/opt/mssql
+
+volumes:
+  sqldata:

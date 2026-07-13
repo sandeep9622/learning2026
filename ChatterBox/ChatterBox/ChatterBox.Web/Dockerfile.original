@@ -13,10 +13,6 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["ChatterBox.Web/ChatterBox.Web.csproj", "ChatterBox.Web/"]
-COPY ["ChatterBox.Application/ChatterBox.Application.csproj", "ChatterBox.Application/"]
-COPY ["ChatterBox.Infrastructure/ChatterBox.Infrastructure.csproj", "ChatterBox.Infrastructure/"]
-COPY ["ChatterBox.Domain/ChatterBox.Domain.csproj", "ChatterBox.Domain/"]
-COPY ["ChatterBox.Shared/ChatterBox.Shared.csproj", "ChatterBox.Shared/"]
 RUN dotnet restore "./ChatterBox.Web/ChatterBox.Web.csproj"
 COPY . .
 WORKDIR "/src/ChatterBox.Web"

@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/docker-compose/">
+    <File Path="docker-compose.yml" />
+  </Folder>
   <Folder Name="/src/">
     <Project Path="D:/GIT/learning2026/ChatterBox/ChatterBox/ChatterBox.Application/ChatterBox.Application.csproj" />
     <Project Path="D:/GIT/learning2026/ChatterBox/ChatterBox/ChatterBox.Domain/ChatterBox.Domain.csproj" />
